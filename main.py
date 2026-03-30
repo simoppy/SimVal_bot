@@ -1,8 +1,10 @@
 from os import getenv
+from dotenv import load_dotenv
+
 import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.client.session.aiohttp import AiohttpSession 
-from dotenv import load_dotenv
+
 from handlers.routers import router
 
 load_dotenv()
