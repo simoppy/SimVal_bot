@@ -1,0 +1,4 @@
+aiogram
+dotenv
+asyncio
+aiohttp-socks
