@@ -1,15 +1,10 @@
-from os import getenv
-from dotenv import load_dotenv
-
 import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.client.session.aiohttp import AiohttpSession 
 
 from handlers.routers import router
-
-load_dotenv()
-TOKEN = getenv("BOT_TOKEN")
-PROXY_URL = getenv("SOCKS5_PROXY")
+from cfg.config_load import TOKEN,PROXY_URL
+from memory.google_drive_uploader import upload_to_drive # загрузка на гугл диск
 
 dp = Dispatcher()
 dp.include_router(router)
