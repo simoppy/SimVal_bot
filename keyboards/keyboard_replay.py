@@ -1,6 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-def get_start_rely_keybord():
+def get_start_rely_keyboard():
     buttons = [
         [
             KeyboardButton(text="Добавить материал"),
